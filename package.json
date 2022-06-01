@@ -1,0 +1,27 @@
+{
+  "name": "prosemirror-yjs-test",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "concurrently -n server,client \"cross-env HOST=localhost PORT=1234 y-websocket-server\" \"vite\"",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "prosemirror-example-setup": "^1.2.0",
+    "prosemirror-keymap": "^1.2.0",
+    "prosemirror-model": "^1.17.0",
+    "prosemirror-state": "^1.4.0",
+    "prosemirror-transform": "^1.6.0",
+    "prosemirror-view": "^1.25.0",
+    "y-prosemirror": "^1.1.2",
+    "y-protocols": "^1.0.5",
+    "y-websocket": "^1.4.3",
+    "yjs": "^13.5.38"
+  }
+}
